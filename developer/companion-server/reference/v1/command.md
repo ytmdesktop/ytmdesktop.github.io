@@ -188,7 +188,7 @@ Plays the video in the queue at the specified index.
 
 #### Data
 
-An integer between 0 and a concatenated array of items and automixItems on the current [queue object](./state/#queue-object).
+An integer between 0 and a concatenated array of items and automixItems on the current [queue object](./state#queue-object).
 
 #### Example
 
