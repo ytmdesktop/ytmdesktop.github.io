@@ -223,7 +223,7 @@ Toggles the dislike status of the current video.
 }
 ```
 
-### Change Video
+### Change Video <Badge type="danger" text="Since 2.0.6" />
 
 Immediately starts playing the specified video or playlist.
 
@@ -233,18 +233,18 @@ Immediately starts playing the specified video or playlist.
 > One of `videoId`, `playlistId`, or both **MUST** be provided.
 
 > [!CAUTION]
-> YouTube Music's UI will display a blank player if a provided `playlistId` does not contain a provided `videoId` if one is given.
+> YouTube Music's UI will display a blank or broken player if both `videoId` and `playlistId` are provided but the video is not in the playlist or the playlist does not exist
 
 | Field      | Type           | Since Version |
 | ---------- | -------------- | ------------- |
-| videoId    | string \| null | 2.0.0         |
-| playlistId | object \| null | 2.0.0         |
+| videoId    | string \| null | 2.0.6         |
+| playlistId | string \| null | 2.0.6         |
 
 #### Example
 
 ```json
 {
-  "command": "repeatMode",
+  "command": "changeVideo",
   "data": {
     "videoId": "dQw4w9WgXcQ",
     "playlistId": "MLCT"
