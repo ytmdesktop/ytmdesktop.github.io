@@ -6,7 +6,7 @@ This endpoint returns metadata about the currently running YTMDesktop client. Th
 
 | Field       | Type                                                                 | Since Version |
 | ----------- | -------------------------------------------------------------------- | ------------- |
-| apiVersions | array of [versions](../../versions.md) | 2.0.0         |
+| apiVersions | array of [versions](../versions.md) | 2.0.0         |
 
 ### Example
 
