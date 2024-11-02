@@ -22,10 +22,10 @@ export default defineConfig({
           { 
             text: 'API Reference',
             items: [
+              { text: 'GET /metadata', link: '/developer/companion-server/reference/metadata' },
               {
                 text: "v1",
                 items: [
-                  { text: 'GET /metadata', link: '/developer/companion-server/reference/v1/metadata' },
                   { text: 'POST /auth/requestcode', link: '/developer/companion-server/reference/v1/auth-requestcode' },
                   { text: 'POST /auth/request', link: '/developer/companion-server/reference/v1/auth-request' },
                   { text: 'GET /state', link: '/developer/companion-server/reference/v1/state' },
