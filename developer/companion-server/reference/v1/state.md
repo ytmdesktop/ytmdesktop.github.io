@@ -109,6 +109,7 @@ This endpoint gets the current state of the player.
 | trackState    | [track state enum](#track-state-enum) | 2.0.0         |
 | videoProgress | float                                 | 2.0.0         |
 | volume        | string                                | 2.0.0         |
+| muted         | boolean                               | 2.0.1         |
 | adPlaying     | boolean                               | 2.0.0         |
 | queue         | [queue object](#queue-object) \| null | 2.0.0         |
 
