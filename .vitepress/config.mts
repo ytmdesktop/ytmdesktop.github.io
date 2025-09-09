@@ -53,6 +53,15 @@ export default defineConfig({
                 ]
               }
             ]
+          },
+          {
+            text: "IPC Reference",
+            items: [
+              { text: "About", link: '/developer/companion-server/ipc-reference/about' },
+              { text: "Connecting", link: '/developer/companion-server/ipc-reference/connecting' },
+              { text: "Events", link: '/developer/companion-server/ipc-reference/events' },
+              { text: "Heartbeat", link: '/developer/companion-server/ipc-reference/heartbeat' }
+            ]
           }
         ]
       }
