@@ -62,7 +62,8 @@ export default defineConfig({
               { text: "Events", link: '/developer/companion-server/ipc-reference/events' },
               { text: "Heartbeat", link: '/developer/companion-server/ipc-reference/heartbeat' }
             ]
-          }
+          },
+          { text: "mDNS", link: "/developer/companion-server/mdns" },
         ]
       }
     ],
