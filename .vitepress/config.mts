@@ -30,7 +30,26 @@ export default defineConfig({
                   { text: 'POST /auth/request', link: '/developer/companion-server/reference/v1/auth-request' },
                   { text: 'GET /state', link: '/developer/companion-server/reference/v1/state' },
                   { text: 'GET /playlists', link: '/developer/companion-server/reference/v1/playlists' },
-                  { text: 'POST /command', link: '/developer/companion-server/reference/v1/command' }
+                  { text: 'POST /command', link: '/developer/companion-server/reference/v1/command' },
+                ]
+              }
+            ]
+          },
+          { 
+            text: "Socket.IO Reference",
+            items: [
+              {
+                text: "v1",
+                items: [
+                  { text: "Connecting", link: '/developer/companion-server/socketio-reference/v1/connecting' },
+                  {
+                    text: "Events",
+                    items: [
+                      { text: "state-update", link: '/developer/companion-server/socketio-reference/v1/events/state-update' },
+                      { text: "playlist-created", link: '/developer/companion-server/socketio-reference/v1/events/playlist-created' },
+                      { text: "playlist-deleted", link: '/developer/companion-server/socketio-reference/v1/events/playlist-deleted' }
+                    ]
+                  }
                 ]
               }
             ]
