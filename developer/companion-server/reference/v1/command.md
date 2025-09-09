@@ -252,6 +252,81 @@ Immediately starts playing the specified video or playlist.
 }
 ```
 
+### Queue Add <Badge type="danger" text="Since 2.1.0" />
+
+Adds the specified video or playlist to the queue at the specified index.
+
+#### Data
+
+> [!IMPORTANT]
+> One of `videoId`, `playlistId`, or both **MUST** be provided.
+
+> [!IMPORTANT]
+> `index` must be between 0 and the queue length.
+
+| Field      | Type           | Since Version |
+| ---------- | -------------- | ------------- |
+| videoId    | string \| null | 2.1.0         |
+| playlistId | string \| null | 2.1.0         |
+| index      | integer        | 2.1.0         |
+
+#### Example
+
+```json
+{
+  "command": "queueAdd",
+  "data": {
+    "videoId": "dQw4w9WgXcQ",
+    "playlistId": "MLCT",
+    "index": 0
+  }
+}
+```
+
+### Queue Remove <Badge type="danger" text="Since 2.1.0" />
+
+Removes the video from the specified index in the queue.
+
+#### Data
+
+> [!IMPORTANT]
+> `index` must be between 0 and the queue length.
+
+#### Example
+
+```json
+{
+  "command": "queueRemove",
+  "data": 0
+}
+```
+
+### Queue Move <Badge type="danger" text="Since 2.1.0" />
+
+Moves the video at the `fromIndex` to the `toIndex`
+
+#### Data
+
+> [!IMPORTANT]
+> `fromIndex` and `toIndex` must be between 0 and the queue length.
+
+| Field     | Type    | Since Version |
+| --------- | ------- | ------------- |
+| fromIndex | integer | 2.1.0         |
+| toIndex   | integer | 2.1.0         |
+
+#### Example
+
+```json
+{
+  "command": "queueMove",
+  "data": {
+    "fromIndex": 0,
+    "toIndex": 0
+  }
+}
+```
+
 ## Response
 
 On success returns 204 No Content.

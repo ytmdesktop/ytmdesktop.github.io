@@ -75,7 +75,8 @@ This endpoint gets the current state of the player.
       "isGenerating": false,
       "isInfinite": false,
       "repeatMode": 0,
-      "selectedItemIndex": 0
+      "selectedItemIndex": 0,
+      "shuffleEnabled": false
     }
   },
   "video": {
@@ -133,6 +134,7 @@ This endpoint gets the current state of the player.
 | isInfinite        | boolean                                 | 2.0.0         |
 | repeatMode        | [repeat mode enum](#repeat-mode-enum)   | 2.0.0         |
 | selectedItemIndex | integer                                 | 2.0.0         |
+| shuffleEnabled    | boolean                                 | 2.0.0         |
 
 #### Queue Item Object
 
