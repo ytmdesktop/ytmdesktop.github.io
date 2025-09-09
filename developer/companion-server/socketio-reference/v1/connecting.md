@@ -12,7 +12,7 @@ You must specify websocket only transparent in the Socket.IO options as the serv
 
 # Authentication
 
-While connecting you **MUST** specify your authentication which you received from [POST /auth/request](../auth-request.md).
+While connecting you **MUST** specify your authentication which you received from [POST /auth/request](../../reference/v1/auth-request.md).
 ```json
 {
     // ... your config + transports
